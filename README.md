@@ -9,8 +9,6 @@ A pure functional Python Library that includes many useful functions.
 
 # **Date**
 
-### 
-
 ### [**getYear**](src/py/date/getYear.py)  
 2025
 
@@ -39,9 +37,7 @@ Monday
 
 # **Date Time**
 
-### 
-
-[**getDateTime12**](src/py/date_time/getDateTime12.py)  
+### [**getDateTime12**](src/py/date_time/getDateTime12.py)  
 09-06-25 05:10 AM
 
 ### [**getYearMonthDay24**](src/py/date_time/getYearMonthDay24.py)  
