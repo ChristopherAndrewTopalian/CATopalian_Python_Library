@@ -49,7 +49,15 @@ Monday
 
 ---
 
-# Legacy
+# Time
+
+### [**getTime12**](src/py/time/getTime12.py)  
+
+---
+
+# EXTRA
+
+## Legacy
 
 [**getAsctime**](src/py/legacy/getAsctime.py)  
 Sat Sep  6 12:34:56 2025  
