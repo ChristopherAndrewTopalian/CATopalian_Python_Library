@@ -1,26 +1,26 @@
-# getHours12.py
-# returns current hour in 12 hour format with AM/PM
+# getSeconds.py
+# returns current second of the minute (00-59)
 
 import datetime as dt
 
-def getHours12():
+def getSeconds():
     now = dt.datetime.now()
-    # format hour in 12 hour clock with AM/PM
-    currentHour = now.strftime("%I %p")
+    # extract seconds as a zero padded string
+    currentSeconds = now.strftime("%S")
 
-    return currentHour
+    return currentSeconds
 
 ####
 
 if __name__ == '__main__':
-    print(getHours12())
+    print(getSeconds())
 
     input('Press Enter to Exit')
 
 ####
 
 '''
-07 AM
+10
 Press Enter to Exit
 '''
 

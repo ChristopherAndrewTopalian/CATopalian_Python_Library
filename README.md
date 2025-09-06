@@ -62,6 +62,9 @@ Monday
 ### [**getMinutes**](src/py/time/getMinutes.py)  
 27
 
+### [**getSeconds**](src/py/time/getSeconds.py)  
+10
+
 ---
 
 # EXTRA
