@@ -53,8 +53,11 @@ Monday
 ### [**getTime24**](src/py/time/getTime24.py)  
 05:53:49  
 
-### [**getHour**](src/py/time/getHour.py)  
-5 
+### [**getHour24**](src/py/time/getHour24.py)  
+7 
+
+### [**getHour12**](src/py/time/getHour12.py)  
+07 AM
 
 ---
 

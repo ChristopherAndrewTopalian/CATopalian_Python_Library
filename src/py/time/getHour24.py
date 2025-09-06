@@ -1,9 +1,9 @@
-# getHour.py
+# getHour24.py
 # returns current hour in 24 hour format
 
 import datetime as dt
 
-def getHour():
+def getHour24():
     now = dt.datetime.now()
     # 0-23
     currentHour = now.hour
@@ -12,7 +12,7 @@ def getHour():
 ####
 
 if __name__ == '__main__':
-    print(getHour())
+    print(getHour24())
 
     input('Press Enter to Exit')
 
