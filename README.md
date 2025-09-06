@@ -7,7 +7,7 @@ A pure functional Python Library that includes many useful functions.
 
 ---
 
-# Date
+# **Date**
 
 ### [**getDayOfMonth**](src/py/date/getDayOfMonth.py)  
 5
@@ -20,7 +20,7 @@ Monday
 
 ---
 
-# Date Time
+# **Date Time**
 
 ### [**getYearMonthDay24**](src/py/date_time/getYearMonthDay24.py)  
 2025-09-05 21:42:02.290152
