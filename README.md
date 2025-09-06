@@ -26,6 +26,9 @@ A pure functional Python Library that includes many useful functions.
 ### [**getDayOfWeekName**](src/py/date/getDayOfWeekName.py)  
 Monday
 
+### [**getDayOfWeekNumber7**](src/py/date/getDayOfWeekNumber7.py)  
+7
+
 ---
 
 # **Date Time**
