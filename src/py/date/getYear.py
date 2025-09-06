@@ -13,7 +13,7 @@ def getYear():
 if __name__ == '__main__':
     print(getYear())
 
-    input('')
+    input('Press Enter to Exit')
 
 ####
 

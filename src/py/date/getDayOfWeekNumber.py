@@ -1,15 +1,18 @@
-# getDayOfWeekNumber7.py
-# 6
+# getDayOfWeekNumber.py
+# 7
 
 import datetime as dt
 
-def getDayOfWeekNumber7():
+def getDayOfWeekNumber():
     now = dt.datetime.now()
 
-    # monday is 0, sunday is 6
+    # python's weekday(): monday=0 ... sunday=6
     dayOfWeekNumber = now.weekday()
 
-    # adjust so that monday is 1, sunday is 7
+    # shift so sunday=0 ... saturday=6
+    dayOfWeekNumber = (dayOfWeekNumber + 1) % 7
+
+    # shift so sunday=1 ... saturday=7
     dayOfWeekNumberAdjusted = dayOfWeekNumber + 1
 
     return dayOfWeekNumberAdjusted
@@ -17,14 +20,17 @@ def getDayOfWeekNumber7():
 ####
 
 if __name__ == '__main__':
-    print(getDayOfWeekNumber7())
+    print(getDayOfWeekNumber())
 
     input('Press Enter to Exit')
 
 ####
 
 '''
-returns: 3, if today is wednesday
+example:
+returns 4 if wednesday
+returns 7 if saturday
+returns 1 if sunday
 '''
 
 ####
@@ -34,4 +40,5 @@ returns: 3, if today is wednesday
 # https://github.com/ChristopherTopalian
 # https://github.com/ChristopherAndrewTopalian
 # https://sites.google.com/view/CollegeOfScripting
+
 

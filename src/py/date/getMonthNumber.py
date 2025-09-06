@@ -16,7 +16,7 @@ def getMonthNumber():
 if __name__ == '__main__':
     print(getMonthNumber())
 
-    input('')
+    input('Press Enter to Exit')
 
 ####
 

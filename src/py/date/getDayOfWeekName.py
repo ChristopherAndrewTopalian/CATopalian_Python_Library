@@ -21,7 +21,7 @@ def getDayOfWeekName():
 if __name__ == '__main__':
     print(getDayOfWeekName())
 
-    input('')
+    input('Press Enter to Exit')
 
 ####
 
