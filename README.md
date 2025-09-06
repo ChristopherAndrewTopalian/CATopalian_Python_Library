@@ -41,10 +41,6 @@ Monday
 
 ### 
 
-[**getAsctime**](src/py/date_time/getAsctime.py)  
-Sat Sep  6 12:34:56 2025  
-Made for C compatibility (fixed-width formatting, not recommended for modern use)  
-
 [**getDateTime12**](src/py/date_time/getDateTime12.py)  
 09-06-25 05:10 AM
 
@@ -52,6 +48,12 @@ Made for C compatibility (fixed-width formatting, not recommended for modern use
 2025-09-05 21:42:02.290152
 
 ---
+
+# Legacy
+
+[**getAsctime**](src/py/legacy/getAsctime.py)  
+Sat Sep  6 12:34:56 2025  
+Made for C compatibility (fixed-width formatting, not recommended for modern use)  
 
 //----//
 
