@@ -13,6 +13,8 @@ A pure functional Python Library that includes many useful functions.
 
 [getYearMonthDay](src/py/date/getYearMonthDay.py)
 
+[getDayOfWeekName](src/py/date/getDayOfWeekName.py)
+
 ---
 
 # Date Time
