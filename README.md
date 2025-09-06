@@ -36,6 +36,9 @@ Monday
 
 # **Date Time**
 
+### [**getDateTime12**](src/py/date_time/getDateTime12.py)  
+09-06-25 05:10 AM
+
 ### [**getYearMonthDay24**](src/py/date_time/getYearMonthDay24.py)  
 2025-09-05 21:42:02.290152
 
