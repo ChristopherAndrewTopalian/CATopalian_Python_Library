@@ -39,7 +39,13 @@ Monday
 
 # **Date Time**
 
-### [**getDateTime12**](src/py/date_time/getDateTime12.py)  
+### 
+
+[**getAsctime**](src/py/date_time/getAsctime.py)  
+Sat Sep  6 12:34:56 2025  
+Made for C compatibility (fixed-width formatting, not recommended for modern use)  
+
+[**getDateTime12**](src/py/date_time/getDateTime12.py)  
 09-06-25 05:10 AM
 
 ### [**getYearMonthDay24**](src/py/date_time/getYearMonthDay24.py)  
