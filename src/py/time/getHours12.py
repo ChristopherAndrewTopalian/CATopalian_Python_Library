@@ -1,9 +1,9 @@
-# getHour12.py
+# getHours12.py
 # returns current hour in 12 hour format with AM/PM
 
 import datetime as dt
 
-def getHour12():
+def getHours12():
     now = dt.datetime.now()
     # format hour in 12 hour clock with AM/PM
     currentHour = now.strftime("%I %p")
@@ -13,7 +13,7 @@ def getHour12():
 ####
 
 if __name__ == '__main__':
-    print(getHour12())
+    print(getHours12())
 
     input('Press Enter to Exit')
 
