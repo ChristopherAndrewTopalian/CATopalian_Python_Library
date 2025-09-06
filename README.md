@@ -20,6 +20,9 @@ A pure functional Python Library that includes many useful functions.
 ### [**getDayOfMonth**](src/py/date/getDayOfMonth.py)  
 5
 
+### [**getDate**](src/py/date/getDate.py)  
+2025-09-06
+
 ### [**getYearMonthDay**](src/py/date/getYearMonthDay.py)  
 2025/9/5
 
