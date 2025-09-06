@@ -54,6 +54,9 @@ Monday
 ### [**getTime12**](src/py/time/getTime12.py)  
 05:50:01 AM  
 
+### [**getTime24**](src/py/time/getTime24.py)  
+05:53:49  
+
 ---
 
 # EXTRA
