@@ -68,8 +68,6 @@ Monday
 ---
 
 # Filter
-### [**filterShowAll**](src/py/filter/filterShowAll.py)  
-
 ### [**filterByYear**](src/py/filter/filterByYear.py)  
 
 ### [**filterByMonth**](src/py/filter/filterByMonth.py)  
@@ -95,6 +93,12 @@ Monday
 ### [**filterByName**](src/py/filter/filterByName.py)  
 
 ### [**filterByNameCS**](src/py/filter/filterByNameCS.py)  
+
+### [**filterShowAll**](src/py/filter/filterShowAll.py)  
+
+### [**filterShowAllNames**](src/py/filter/filterShowAllNames.py)  
+
+### [**filterShowAllDates**](src/py/filter/filterShowAllDates.py)  
 
 ---
 
