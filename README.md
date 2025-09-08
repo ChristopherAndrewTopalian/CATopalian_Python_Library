@@ -94,6 +94,8 @@ Monday
 
 ### [**filterByName**](src/py/filter/filterByName.py)  
 
+### [**filterByNameCS**](src/py/filter/filterByNameCS.py)  
+
 ---
 
 # EXTRA

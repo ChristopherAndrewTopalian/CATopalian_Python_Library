@@ -1,5 +1,5 @@
-# filterByName.py
-# returns only the items from a list that match the given name (case-insensitive)
+# filterByNameCS.py
+# returns only the items from a list that match the given name (case sensitive)
 
 people = [
     {
@@ -30,8 +30,8 @@ def filterByName(whichList, targetName):
         # grab the name string from the current item
         itemName = whichList[z]['name']
 
-        # compare both itemName and targetName in lowercase (case-insensitive)
-        if (itemName.lower() == targetName.lower()):
+        # if the name matches the target name, keep it
+        if (itemName == targetName):
 
             # add the matching item into the result list
             result.append(whichList[z])
@@ -42,8 +42,8 @@ def filterByName(whichList, targetName):
 ####
 
 if __name__ == '__main__':
-    # call the function with our people list, searching for "jane" (lowercase works too)
-    namePeople = filterByName(people, "jane")
+    # call the function with our people list, searching for "Jane"
+    namePeople = filterByName(people, "Jane")
 
     # print the filtered list so we can see the result
     print(namePeople)
