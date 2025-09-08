@@ -1,5 +1,5 @@
-# filterByDay.py
-# returns only the items from a list that match the given day (ignores year and month)
+# filterAfterDate.py
+# returns only the items from a list that have a date greater than the given date
 
 people = [
     {
@@ -20,33 +20,38 @@ people = [
 
 ####
 
-def filterByDay(whichList, whichDay):
+from datetime import datetime
+
+def filterAfterDate(whichList, cutoffDate):
     # start with an empty list
     result = []
+
+    # convert the cutoffDate string into a datetime object
+    cutoff = datetime.strptime(cutoffDate, "%Y-%m-%d %H:%M:%S")
 
     # loop through every index in the given list
     for z in range(len(whichList)):
         # grab the date string from the current item
         dateString = whichList[z]['date']
 
-        # slice out just the day part (characters 8 and 9 of "YYYY-MM-DD")
-        dayPart = dateString[8:10]
+        # convert the date string into a datetime object
+        itemDate = datetime.strptime(dateString, "%Y-%m-%d %H:%M:%S")
 
-        # if the day matches, add this item into the result list
-        if (dayPart == whichDay):
+        # if the item date is greater than the cutoff date, keep it
+        if (itemDate > cutoff):
             result.append(whichList[z])
 
-    # return the new list containing only items with the given day
+    # return the new list containing only items after the cutoff
     return result
 
 ####
 
 if __name__ == '__main__':
-    # call the function with our people list, searching for the 09th ("09")
-    dayNinePeople = filterByDay(people, '09')
+    # call the function with our people list, using May 2, 2024 as the cutoff
+    afterDatePeople = filterAfterDate(people, "2024-05-02 00:00:00")
 
     # print the filtered list so we can see the result
-    print(dayNinePeople)
+    print(afterDatePeople)
 
     input('Press Enter to Exit')
 
