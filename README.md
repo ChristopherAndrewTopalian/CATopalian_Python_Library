@@ -102,6 +102,20 @@ Monday
 
 ---
 
+# Math
+
+## Lists
+
+### [**getMin**](src/py/math/lists/getMin.py)  
+
+---
+
+## Dictionaries
+
+### [**getMinByKey**](src/py/math/lists_of_dictionaries/getMinByKey.py)  
+
+---
+
 # EXTRA
 
 ## Legacy
