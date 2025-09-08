@@ -1,4 +1,4 @@
-# filterByMonth.py
+# filterByYearMonth.py
 # returns all items of a list that match a given year and month
 
 people = [
@@ -20,7 +20,7 @@ people = [
 
 ####
 
-def filterByMonth(whichList, whichMonth):
+def filterByYearMonth(whichList, whichMonth):
     # start with an empty list
     result = []
 
@@ -38,7 +38,7 @@ def filterByMonth(whichList, whichMonth):
 
 if __name__ == '__main__':
     # call the function with our people list and the month '2024-05'
-    filteredPeople = filterByMonth(people, '2024-05')
+    filteredPeople = filterByYearMonth(people, '2024-05')
 
     # print the filtered list so we can see the result
     print(filteredPeople)
