@@ -114,6 +114,8 @@ Monday
 
 ### [**getMinByKey**](src/py/math/lists_of_dictionaries/getMinByKey.py)  
 
+### [**getMaxByKey**](src/py/math/lists_of_dictionaries/getMaxByKey.py)  
+
 ---
 
 # EXTRA

@@ -1,5 +1,5 @@
-# getMinByKey.py
-# finds the smallest value for a given key inside a list of dictionaries
+# getMaxByKey.py
+# finds the largest value for a given key inside a list of dictionaries
 
 # create a sample list of dictionaries
 people = [
@@ -21,9 +21,9 @@ people = [
 
 ####
 
-def getMinByKey(listOfDicts, keyName):
-    # start by assuming the first item's key value is the minimum
-    minValue = listOfDicts[0][keyName]
+def getMaxByKey(listOfDicts, keyName):
+    # start by assuming the first item's key value is the maximum
+    maxValue = listOfDicts[0][keyName]
 
     # loop through every dictionary in the list
     for z in range(len(listOfDicts)):
@@ -31,21 +31,21 @@ def getMinByKey(listOfDicts, keyName):
         # get the value for the specified key in the current dictionary
         value = listOfDicts[z][keyName]
 
-        # if this value is smaller than the current minimum, update the minimum
-        if (value < minValue):
-            minValue = value
+        # if this value is larger than the current maximum, update the maximum
+        if (value > maxValue):
+            maxValue = value
 
-    # return the smallest value found for the given key
-    return minValue
+    # return the largest value found for the given key
+    return maxValue
 
 ####
 
 if __name__ == '__main__':
-    # call the function with our people list, looking for the minimum "score"
-    minimumScore = getMinByKey(people, "score")
+    # call the function with our people list, looking for the maximum "score"
+    maximumScore = getMaxByKey(people, "score")
 
-    # print the smallest score so we can see the result
-    print(minimumScore)
+    # print the largest score so we can see the result
+    print(maximumScore)
 
     # keep the program open until Enter is pressed
     input('Press Enter to Exit')
@@ -53,7 +53,7 @@ if __name__ == '__main__':
 ####
 
 '''
-90
+98
 Press Enter to Exit
 '''
 
