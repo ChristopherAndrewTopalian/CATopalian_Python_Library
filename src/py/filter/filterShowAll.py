@@ -54,7 +54,7 @@ if __name__ == '__main__':
 ####
 
 # Dedicated to God the Father
-# All Rights Reserved Christopher Andrew Topalian Copyright 2000-2024
+# All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
 # filterShowAll.py
 # https://github.com/ChristopherTopalian
 # https://github.com/ChristopherAndrewTopalian

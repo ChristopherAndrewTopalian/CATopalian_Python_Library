@@ -72,6 +72,8 @@ Monday
 
 ### [**filterByYear**](src/py/filter/filterByYear.py)  
 
+### [**filterByMonth**](src/py/filter/filterByMonth.py)  
+
 ---
 
 # EXTRA
