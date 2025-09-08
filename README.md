@@ -82,6 +82,8 @@ Monday
 
 ### [**filterAfterDate**](src/py/filter/filterAfterDate.py)  
 
+### [**filterBetweenDates**](src/py/filter/filterBetweenDates.py)  
+
 ---
 
 # EXTRA
