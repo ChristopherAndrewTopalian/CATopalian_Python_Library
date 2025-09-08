@@ -92,6 +92,8 @@ Monday
 
 ### [**filterByMonthDay**](src/py/filter/filterByMonthDay.py)  
 
+### [**filterByName**](src/py/filter/filterByName.py)  
+
 ---
 
 # EXTRA
