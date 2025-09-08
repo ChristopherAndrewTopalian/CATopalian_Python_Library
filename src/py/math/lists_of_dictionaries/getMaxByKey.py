@@ -27,7 +27,6 @@ def getMaxByKey(listOfDicts, keyName):
 
     # loop through every dictionary in the list
     for z in range(len(listOfDicts)):
-
         # get the value for the specified key in the current dictionary
         value = listOfDicts[z][keyName]
 
