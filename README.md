@@ -86,6 +86,8 @@ Monday
 
 ### [**filterOutsideDates**](src/py/filter/filterOutsideDates.py)  
 
+### [**filterByDateTime**](src/py/filter/filterByDateTime.py)  
+
 ---
 
 # EXTRA
