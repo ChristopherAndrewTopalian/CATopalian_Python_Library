@@ -108,6 +108,8 @@ Monday
 
 ### [**getMin**](src/py/math/lists/getMin.py)  
 
+### [**get_max**](src/py/math/lists/get_max.py)  
+
 ---
 
 ## Dictionaries
