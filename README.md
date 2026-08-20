@@ -33,7 +33,7 @@ Monday
 ### [**get_day_of_week_number**](src/py/date/get_day_of_week_number.py)  
 7
 
-### [**getDayOfWeekNumber7**](src/py/date/getDayOfWeekNumber7.py)  
+### [**get_day_of_week_number_7**](src/py/date/get_day_of_week_number_7.py)  
 6
 
 ---
