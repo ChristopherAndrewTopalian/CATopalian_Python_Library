@@ -43,7 +43,7 @@ Monday
 ### [**get_date_time_12**](src/py/date_time/get_date_time_12.py)  
 09-06-25 05:10 AM
 
-### [**getYearMonthDay24**](src/py/date_time/getYearMonthDay24.py)  
+### [**get_year_month_day_24**](src/py/date_time/get_year_month_day_24.py)  
 2025-09-05 21:42:02.290152
 
 ---
