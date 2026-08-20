@@ -15,7 +15,7 @@ A pure functional Python Library that includes many useful functions.
 ### [**getMonthNumber**](src/py/date/getMonthNumber.py)  
 9
 
-### [**getDayOfMonth**](src/py/date/getDayOfMonth.py)  
+### [**get_day_of_month**](src/py/date/get_day_of_month.py)  
 5
 
 ### [**get_date**](src/py/date/get_date.py)  
