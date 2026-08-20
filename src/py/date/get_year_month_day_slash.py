@@ -1,9 +1,8 @@
-# getYearMonthDay.py
-# 2025/9/5
+# get_year_month_day_slash.py    2025/9/5
 
 from datetime import datetime
 
-def getYearMonthDay():
+def get_year_month_day_slash():
     dateTime = datetime.now()
     year = dateTime.year
     month = dateTime.month
@@ -16,20 +15,15 @@ def getYearMonthDay():
 ####
 
 if __name__ == '__main__':
-    print(getYearMonthDay())
-
+    print(get_year_month_day_slash())
     input('Press Enter to Exit')
-
-####
 
 '''
 2025/9/5
 '''
 
-####
-
 # Dedicated to God the Father
-# All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+# All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 # https://github.com/ChristopherTopalian
 # https://github.com/ChristopherAndrewTopalian
 # https://sites.google.com/view/CollegeOfScripting
