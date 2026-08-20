@@ -1,9 +1,8 @@
-# getDayOfWeekName.py
-# Monday
+# get_day_of_week_name.py    Monday
 
 import datetime as dt
 
-def getDayOfWeekName():
+def get_day_of_week_name():
     currentDate = dt.datetime.now()
 
     # 0 is Monday, 6 is Sunday
@@ -19,21 +18,16 @@ def getDayOfWeekName():
 ####
 
 if __name__ == '__main__':
-    print(getDayOfWeekName())
-
+    print(get_day_of_week_name())
     input('Press Enter to Exit')
-
-####
 
 '''
 Monday
 '''
 
-####
-
 # Dedicated to God the Father
-# All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
-# https://github.com/ChristopherTopalian
+# All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 # https://github.com/ChristopherAndrewTopalian
+# https://github.com/ChristopherTopalian
 # https://sites.google.com/view/CollegeOfScripting
 
