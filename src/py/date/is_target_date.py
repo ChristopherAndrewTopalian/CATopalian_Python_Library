@@ -16,7 +16,7 @@ def is_target_date(target_string):
 
 if __name__ == '__main__':
     print("System: Checking date authorization...")
-    
+
     # We pass the date we are looking for into the function
     if is_target_date("2026-08-20"):
         print("Authorization granted. Target date verified.")

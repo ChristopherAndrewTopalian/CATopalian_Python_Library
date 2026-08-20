@@ -1,4 +1,4 @@
-# get_year_month_day.py    2025-09-06
+# get_year_month_day.py    2026-08-20
 
 import datetime as dt
 
@@ -11,7 +11,7 @@ if __name__ == '__main__':
     input('Press Enter to Exit')
 
 '''
-2025-09-06
+2026-08-20
 Press Enter to Exit
 '''
 
