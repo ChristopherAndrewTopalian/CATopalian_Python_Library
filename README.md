@@ -71,37 +71,37 @@ Monday
 ---
 
 # Filter
-### [**filterByYear**](src/py/filter/filterByYear.py)  
+### [**filterByYear**](src/py/filter/list_of_dictionaries/filterByYear.py)  
 
-### [**filterByMonth**](src/py/filter/filterByMonth.py)  
+### [**filterByMonth**](src/py/filter/list_of_dictionaries/filterByMonth.py)  
 
-### [**filterByDay**](src/py/filter/filterByDay.py)  
+### [**filterByDay**](src/py/filter/list_of_dictionaries/filterByDay.py)  
 
-### [**filterByYearMonth**](src/py/filter/filterByYearMonth.py)  
+### [**filterByYearMonth**](src/py/filter/list_of_dictionaries/filterByYearMonth.py)  
 
-### [**filterBeforeDate**](src/py/filter/filterBeforeDate.py)  
+### [**filterBeforeDate**](src/py/filter/list_of_dictionaries/filterBeforeDate.py)  
 
-### [**filterAfterDate**](src/py/filter/filterAfterDate.py)  
+### [**filterAfterDate**](src/py/filter/list_of_dictionaries/filterAfterDate.py)  
 
-### [**filterBetweenDates**](src/py/filter/filterBetweenDates.py)  
+### [**filterBetweenDates**](src/py/filter/list_of_dictionaries/filterBetweenDates.py)  
 
-### [**filterOutsideDates**](src/py/filter/filterOutsideDates.py)  
+### [**filterOutsideDates**](src/py/filter/list_of_dictionaries/filterOutsideDates.py)  
 
-### [**filterByDate**](src/py/filter/filterByDate.py)  
+### [**filterByDate**](src/py/filter/list_of_dictionaries/filterByDate.py)  
 
-### [**filterByDateTime**](src/py/filter/filterByDateTime.py)  
+### [**filterByDateTime**](src/py/filter/list_of_dictionaries/filterByDateTime.py)  
 
-### [**filterByMonthDay**](src/py/filter/filterByMonthDay.py)  
+### [**filterByMonthDay**](src/py/filter/list_of_dictionaries/filterByMonthDay.py)  
 
-### [**filterByName**](src/py/filter/filterByName.py)  
+### [**filterByName**](src/py/filter/list_of_dictionaries/filterByName.py)  
 
-### [**filterByNameCS**](src/py/filter/filterByNameCS.py)  
+### [**filterByNameCS**](src/py/filter/list_of_dictionaries/filterByNameCS.py)  
 
-### [**filterShowAll**](src/py/filter/filterShowAll.py)  
+### [**filterShowAll**](src/py/filter/list_of_dictionaries/filterShowAll.py)  
 
-### [**filterShowAllNames**](src/py/filter/filterShowAllNames.py)  
+### [**filterShowAllNames**](src/py/filter/list_of_dictionaries/filterShowAllNames.py)  
 
-### [**filterShowAllDates**](src/py/filter/filterShowAllDates.py)  
+### [**filterShowAllDates**](src/py/filter/list_of_dictionaries/filterShowAllDates.py)  
 
 ---
 
