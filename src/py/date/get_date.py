@@ -1,20 +1,14 @@
-# getDate.py
-# 2025-09-06
+# get_date.py
 
 import datetime as dt
 
-def getDate():
+def get_date():
     today = dt.date.today()
     return today
 
-####
-
 if __name__ == '__main__':
-    print(getDate())
-
+    print(get_date())
     input('Press Enter to Exit')
-
-####
 
 '''
 2025-09-06
@@ -24,8 +18,8 @@ Press Enter to Exit
 ####
 
 # Dedicated to God the Father
-# All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
-# https://github.com/ChristopherTopalian
+# All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 # https://github.com/ChristopherAndrewTopalian
+# https://github.com/ChristopherTopalian
 # https://sites.google.com/view/CollegeOfScripting
 
