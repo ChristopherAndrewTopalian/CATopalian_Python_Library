@@ -1,5 +1,4 @@
-# get_date_time_12.py
-# 09-06-25 05:10 AM
+# get_date_time_12.py    09-06-25 05:10 AM
 
 import datetime as dt
 
