@@ -1,9 +1,8 @@
-# getDayOfWeekNumber.py
-# 7
+# get_day_of_week_number.py    7
 
 import datetime as dt
 
-def getDayOfWeekNumber():
+def get_day_of_week_number():
     now = dt.datetime.now()
 
     # python's weekday(): monday=0 ... sunday=6
@@ -20,11 +19,8 @@ def getDayOfWeekNumber():
 ####
 
 if __name__ == '__main__':
-    print(getDayOfWeekNumber())
-
+    print(get_day_of_week_number())
     input('Press Enter to Exit')
-
-####
 
 '''
 example:
@@ -32,8 +28,6 @@ returns 4 if wednesday
 returns 7 if saturday
 returns 1 if sunday
 '''
-
-####
 
 # Dedicated to God the Father
 # All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025

@@ -18,7 +18,7 @@ A pure functional Python Library that includes many useful functions.
 ### [**get_day_of_month**](src/py/date/get_day_of_month.py)  
 5
 
-### [**get_date**](src/py/date/get_date.py)  
+### [**get_year_month_day**](src/py/date/get_year_month_day.py)  
 2025-09-06
 
 ### [**getYearMonthDay**](src/py/date/getYearMonthDay.py)  
@@ -27,7 +27,7 @@ A pure functional Python Library that includes many useful functions.
 ### [**get_day_of_week_name**](src/py/date/get_day_of_week_name.py)  
 Monday
 
-### [**getDayOfWeekNumber**](src/py/date/getDayOfWeekNumber.py)  
+### [**get_day_of_week_number**](src/py/date/get_day_of_week_number.py)  
 7
 
 ### [**getDayOfWeekNumber7**](src/py/date/getDayOfWeekNumber7.py)  
