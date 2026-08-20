@@ -46,6 +46,9 @@ Monday
 ### [**get_year_month_day_24**](src/py/date_time/get_year_month_day_24.py)  
 2025-09-05 21:42:02.290152
 
+### [**is_target_date**](src/py/date/is_target_date.py)  
+2026-08-20
+
 ---
 
 # Time
