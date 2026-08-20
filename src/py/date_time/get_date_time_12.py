@@ -1,9 +1,9 @@
-# getDateTime12.py
+# get_date_time_12.py
 # 09-06-25 05:10 AM
 
 import datetime as dt
 
-def getDateTime12():
+def get_date_time_12():
     currentDateTime = dt.datetime.now()
 
     # formatted date MM-DD-YY
@@ -19,7 +19,7 @@ def getDateTime12():
 ####
 
 if __name__ == '__main__':
-    print(getDateTime12())
+    print(get_date_time_12())
 
     input('Press Enter to Exit')
 
