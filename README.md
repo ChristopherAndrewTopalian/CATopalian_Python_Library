@@ -12,7 +12,7 @@ A pure functional Python Library that includes many useful functions.
 ### [**getYear**](src/py/date/getYear.py)  
 2025
 
-### [**getMonthNumber**](src/py/date/getMonthNumber.py)  
+### [**get_month_number**](src/py/date/get_month_number.py)  
 9
 
 ### [**get_day_of_month**](src/py/date/get_day_of_month.py)  
