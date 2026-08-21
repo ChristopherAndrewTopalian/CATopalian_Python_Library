@@ -1,4 +1,5 @@
-# get_year_month_day.py    2026-08-20
+# get_year_month_day.py
+# 2026-08-20
 
 import datetime as dt
 
