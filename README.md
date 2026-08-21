@@ -5,6 +5,14 @@ A pure functional Python Library that includes many useful functions.
 
 ![py001](src/media/textures/bg/py001.png)
 
+![001](src/media/textures/screenshots/001.webp)
+
+![002](src/media/textures/screenshots/002.webp)
+
+![003](src/media/textures/screenshots/003.webp)
+
+Video: https://www.youtube.com/watch?v=B71Cn4Io4ns
+
 ---
 
 # **Date**
