@@ -71,7 +71,7 @@ clickSoundFile = os.path.join('src', 'media', 'sounds', 'click.wav')
 # setup click sound
 clickSound = QSoundEffect()
 clickSound.setSource(QUrl.fromLocalFile(clickSoundFile))
-clickSound.setVolume(0.2)
+clickSound.setVolume(0.02)
 
 ####
 
