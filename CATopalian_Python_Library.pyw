@@ -129,9 +129,9 @@ code_viewer.setStyleSheet("""
         border-radius: 5px;
         padding: 20px;
         font-weight: bold;
-        font-family: Consolas, monospace;
-        font-size: 26px; 
-        color: rgb(212, 212, 212); /* Standard light grey for base text */
+        font-family: Arial;
+        font-size: 30px; 
+        color: rgb(255, 255, 255); /* Standard light grey for base text */
     }
 """)
 right_layout.addWidget(code_viewer)
@@ -192,8 +192,8 @@ if os.path.exists(base_py_dir):
                 )
 
                 thumb_layout.addWidget(btn)
-                
-            # 3. Create the Divider
+
+            # Create the Divider
             divider = QFrame()
             divider.setFrameShape(QFrame.HLine)
             divider.setFrameShadow(QFrame.Sunken)
