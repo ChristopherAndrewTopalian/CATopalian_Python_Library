@@ -19,12 +19,27 @@ from src.py.file.show_in_file_explorer import show_in_file_explorer
 
 ####
 
+def change_font_size(text_widget, delta):
+    """Changes the font size dynamically across the entire document."""
+    current_font = text_widget.font()
+    new_size = max(10, current_font.pointSize() + delta)
+    
+    current_font.setPointSize(new_size)
+    
+    # Update the widget's base font
+    text_widget.setFont(current_font)
+    
+    # Update the document's default font so all text redraws cleanly
+    text_widget.document().setDefaultFont(current_font)
+
 def handle_library_click(event, file_path, text_widget, click_sound):
     """Routes the mouse click to the appropriate file action."""
     click_sound.play()
     
     if event.button() == Qt.LeftButton:
-        # LEFT CLICK: Display in QTextEdit
+        # UPDATE THE TRACKER FOR THE SAVE BUTTON
+        active_file["path"] = file_path
+        
         try:
             with open(file_path, 'r', encoding='utf-8') as f:
                 code_content = f.read()
@@ -33,12 +48,30 @@ def handle_library_click(event, file_path, text_widget, click_sound):
             text_widget.setPlainText(f"Error reading file:\n{e}")
             
     elif event.button() == Qt.RightButton:
-        # RIGHT CLICK: Open in VS Code
         open_file(file_path)
-
+        
     elif event.button() == Qt.MiddleButton:
-        # MIDDLE CLICK: Show in File Explorer
         show_in_file_explorer(file_path)
+
+####
+
+# Tracks the currently opened file so the Save button knows what to overwrite
+active_file = {"path": None}
+
+def save_current_file(text_widget, click_sound):
+    """Saves the modified text back to the physical Python file."""
+    path = active_file["path"]
+    
+    if path:
+        try:
+            with open(path, 'w', encoding='utf-8') as f:
+                f.write(text_widget.toPlainText())
+            click_sound.play()
+            print(f"SUCCESS: Saved changes to {os.path.basename(path)}")
+        except Exception as e:
+            print(f"ERROR: Could not save file. {e}")
+    else:
+        print("No file is currently open to save.")
 
 ####
 
@@ -111,6 +144,89 @@ scroll_area, thumb_container, thumb_layout = create_scrollable_div()
 left_layout.addWidget(scroll_area)
 main_layout.addWidget(left_menu)
 
+# RIGHT COLUMN (Content)
+right_content = QWidget()
+right_layout = QVBoxLayout(right_content)
+right_layout.setContentsMargins(20, 15, 20, 15)
+right_layout.setSpacing(10)
+
+# --- THE ACCESSIBILITY TOOLBAR ---
+toolbar_layout = QHBoxLayout()
+
+# Save Button
+save_btn = QPushButton("💾 Save Script")
+save_btn.setCursor(QCursor(Qt.PointingHandCursor))
+save_btn.setStyleSheet("""
+    QPushButton {
+        background-color: rgb(30, 30, 30); color: #76ff03; 
+        font-weight: bold; font-size: 16px; padding: 8px 15px; 
+        border: 1px solid #555; border-radius: 4px;
+    }
+    QPushButton:hover { border: 1px solid #76ff03; background-color: rgb(50, 50, 50); }
+    QPushButton:pressed { background-color: rgb(10, 10, 10); }
+""")
+# Connect the save button, passing the text widget and sound effect
+save_btn.clicked.connect(lambda: save_current_file(code_viewer, clickSound))
+
+# Zoom Buttons
+zoom_in_btn = QPushButton("Font +")
+zoom_out_btn = QPushButton("Font -")
+
+for btn in (zoom_in_btn, zoom_out_btn):
+    btn.setCursor(QCursor(Qt.PointingHandCursor))
+    btn.setStyleSheet("""
+        QPushButton {
+            background-color: rgb(30, 30, 30); color: #4dc2ff; 
+            font-weight: bold; font-size: 16px; padding: 8px 15px; 
+            border: 1px solid #555; border-radius: 4px;
+        }
+        QPushButton:hover { border: 1px solid #4dc2ff; background-color: rgb(50, 50, 50); }
+        QPushButton:pressed { background-color: rgb(10, 10, 10); }
+    """)
+
+# PySide6 has built-in zoom functions. The "2" means it increases/decreases by 2 font sizes.
+# Connect to our manual font sizing function
+zoom_in_btn.clicked.connect(lambda: change_font_size(code_viewer, 2))
+zoom_out_btn.clicked.connect(lambda: change_font_size(code_viewer, -2))
+
+# Add buttons to the toolbar (addStretch pushes the zoom buttons to the far right)
+toolbar_layout.addWidget(save_btn)
+toolbar_layout.addStretch()
+toolbar_layout.addWidget(zoom_in_btn)
+toolbar_layout.addWidget(zoom_out_btn)
+
+right_layout.addLayout(toolbar_layout)
+
+# THE CODE EDITOR
+code_viewer = QTextEdit()
+code_viewer.setLineWrapMode(QTextEdit.NoWrap)
+
+# Create the Arial 35 Bold font object
+initial_font = QFont("Arial", 35, QFont.Bold)
+
+# Apply it to both the widget and the document default
+code_viewer.setFont(initial_font)
+code_viewer.document().setDefaultFont(initial_font)
+
+# Clean Stylesheet (NO font-size or font-family locks)
+code_viewer.setStyleSheet("""
+    QTextEdit {
+        background-color: rgb(15, 15, 15);
+        border: 1px solid #555;
+        border-radius: 5px;
+        padding: 20px;
+        font-family: Arial;
+        color: rgb(212, 212, 212);
+    }
+""")
+right_layout.addWidget(code_viewer)
+
+# Attach the syntax highlighter
+highlighter = PythonHighlighter(code_viewer.document())
+
+main_layout.addWidget(right_content)
+
+'''
 # RIGHT COLUMN (Content - defining this first so buttons can reference it)
 right_content = QWidget()
 right_layout = QVBoxLayout(right_content)
@@ -141,6 +257,7 @@ right_layout.addWidget(code_viewer)
 highlighter = PythonHighlighter(code_viewer.document())
 
 main_layout.addWidget(right_content)
+'''
 
 ####
 

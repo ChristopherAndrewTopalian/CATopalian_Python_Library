@@ -11,7 +11,7 @@ class PythonHighlighter(QSyntaxHighlighter):
         # Keywords (Vibrant Purple/Pink)
         keyword_format = QTextCharFormat()
         keyword_format.setForeground(QColor("#c586c0"))
-        keyword_format.setFontWeight(QFont.Bold)
+        #keyword_format.setFontWeight(QFont.Bold)
         keywords = [
             r"\bdef\b", r"\bimport\b", r"\bfrom\b", r"\bclass\b", 
             r"\breturn\b", r"\bif\b", r"\belse\b", r"\belif\b", 
