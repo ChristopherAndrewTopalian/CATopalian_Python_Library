@@ -79,7 +79,7 @@ clickSound.setVolume(0.02)
 
 window = QWidget()
 window.setWindowTitle("CATopalian Python Library")
-window.resize(1100, 700)
+window.resize(1200, 700)
 
 # Main Horizontal Split Layout
 main_layout = QHBoxLayout(window)
@@ -88,7 +88,7 @@ main_layout.setSpacing(0)
 
 # LEFT COLUMN (Sidebar)
 left_menu = QWidget()
-left_menu.setFixedWidth(250)
+left_menu.setFixedWidth(265)
 left_menu.setStyleSheet("background-color: rgb(20, 20, 20); border-right: 2px solid #555;")
 left_layout = QVBoxLayout(left_menu)
 left_layout.setContentsMargins(10, 10, 10, 10)
@@ -130,8 +130,8 @@ code_viewer.setStyleSheet("""
         padding: 20px;
         font-weight: bold;
         font-family: Arial;
-        font-size: 30px; 
-        color: rgb(255, 255, 255); /* Standard light grey for base text */
+        font-size: 35px; 
+        color: rgb(220, 220, 220); /* Standard light grey for base text */
     }
 """)
 right_layout.addWidget(code_viewer)
